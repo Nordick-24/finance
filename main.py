@@ -27,7 +27,14 @@ try:
     database.autocommit = True
     cursor = database.cursor()
 
-    actions = int(input("What spending do you have?:\n1)Apartament\n2)Car\n3)Clothings\n4)Restaurant\n5)Look some\nWhich One: "))
+    actions = int(input("""
+    What spending do you have?:
+    \n1)Apartament
+    \n2)Car
+    \n3)Clothings
+    \n4)Restaurant
+    \n5)Look some
+    \nWhich One: """))
 
     if actions == 1:
         insert_function('apartament')
@@ -43,7 +50,12 @@ try:
 
     elif actions == 5:
 
-        which_one = int(input("What do you want look\n1)Apartament\n2)Car\n3)Clothings\n4)Restaurant\n Which one: "))
+        which_one = int(input("""What do you want look
+        \n1)Apartament
+        \n2)Car
+        \n3)Clothings
+        \n4)Restaurant
+        \nWhich one: """))
 
         if which_one == 1:
             look_function('apartament')
